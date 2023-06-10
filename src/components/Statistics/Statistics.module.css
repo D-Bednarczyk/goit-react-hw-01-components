@@ -1,0 +1,17 @@
+.statistics {
+  width: 500px;
+  background-color: white;
+}
+
+.headerh1 {
+  background-color: white;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.litem {
+  width: 100px;
+}
