@@ -1,9 +1,13 @@
 import css from './FriendList.module.css';
+import clsx from 'clsx';
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
     <li className={css.friend} key={id}>
-      <span className="status">{isOnline ? 'online' : 'offline'}</span>
+      <span
+        style={{ backgroundColor: clsx(isOnline ? 'green' : 'red') }}
+        className={css.dot}
+      ></span>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <span className="name">{name}</span>
     </li>
