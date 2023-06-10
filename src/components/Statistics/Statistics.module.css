@@ -4,7 +4,11 @@
 }
 
 .headerh1 {
+  text-transform: uppercase;
+  text-align: center;
   background-color: white;
+  font-size: 40px;
+  padding: 30px;
 }
 
 .list {
@@ -13,5 +17,18 @@
 }
 
 .litem {
+  color: white;
   width: 100px;
+}
+
+.label {
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.perc {
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 25px;
 }

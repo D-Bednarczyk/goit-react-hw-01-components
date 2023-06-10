@@ -6,19 +6,18 @@ let getRandomColor = () => {
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
-  console.log(color);
   return color;
 };
 
 const StatList = ({ stats }) => {
   return stats.map(liitem => (
     <li
-      style={{ backgroundColor: { getRandomColor } }}
+      style={{ backgroundColor: getRandomColor() }}
       className={css.litem}
       key={liitem.id}
     >
-      <p>{liitem.label}</p>
-      <p>{liitem.percentage}%</p>
+      <p className={css.label}>{liitem.label}</p>
+      <p className={css.perc}>{liitem.percentage}%</p>
     </li>
   ));
 };
