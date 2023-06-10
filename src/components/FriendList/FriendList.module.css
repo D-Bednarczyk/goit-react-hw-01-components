@@ -1,0 +1,9 @@
+.ullist {
+  list-style-type: none;
+}
+
+.friend {
+  margin-bottom: 15px;
+  background-color: white;
+  display: flex;
+}

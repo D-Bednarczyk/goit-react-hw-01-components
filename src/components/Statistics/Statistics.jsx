@@ -1,6 +1,6 @@
 import css from './Statistics.module.css';
 
-let getRandomColor = () => {
+const getRandomColor = () => {
   var letters = '0123456789ABCDEF';
   var color = '#';
   for (var i = 0; i < 6; i++) {
@@ -10,6 +10,8 @@ let getRandomColor = () => {
 };
 
 const StatList = ({ stats }) => {
+  //console.log(stats);
+  //stats.map(f => console.log(f));
   return stats.map(liitem => (
     <li
       style={{ backgroundColor: getRandomColor() }}
