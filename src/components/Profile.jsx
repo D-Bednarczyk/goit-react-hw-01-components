@@ -1,26 +1,28 @@
+import css from 'Profile.module.css';
+
 export const Profile = props => {
   return (
     <>
-      <div class="profile">
-        <div class="description">
-          <img src={props.avatar} alt="User avatar" class="avatar" />
-          <p class="name">{props.username}</p>
-          <p class="tag">{props.tag}</p>
-          <p class="location">{props.location}</p>
+      <div className={css.profile}>
+        <div className="description">
+          <img className={css.avatar} src={props.avatar} alt="User avatar" />
+          <p className={css.name}>{props.username}</p>
+          <p className={css.mediatag}>{props.tag}</p>
+          <p className={css.location}>{props.location}</p>
         </div>
 
-        <ul class="stats">
-          <li>
-            <span class="label">Followers</span>
-            <span class="quantity">{props.stats.followers}</span>
+        <ul className={css.stats}>
+          <li className={css.litem}>
+            <span className={css.label}>Followers</span>
+            <span className={css.quantity}>{props.stats.followers}</span>
           </li>
-          <li>
-            <span class="label">Views</span>
-            <span class="quantity">{props.stats.vievs}</span>
+          <li className={css.litem}>
+            <span className={css.label}>Views</span>
+            <span className={css.quantity}>{props.stats.views}</span>
           </li>
-          <li>
-            <span class="label">Likes</span>
-            <span class="quantity">{props.stats.likes}</span>
+          <li className={css.litem}>
+            <span className={css.label}>Likes</span>
+            <span className={css.quantity}>{props.stats.likes}</span>
           </li>
         </ul>
       </div>

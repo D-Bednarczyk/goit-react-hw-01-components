@@ -11,6 +11,7 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        backgroundColor: 'rgb(201, 218, 218)',
       }}
     >
       <Profile
