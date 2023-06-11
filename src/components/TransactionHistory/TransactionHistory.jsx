@@ -2,12 +2,9 @@ import css from './TransactionHistory.module.css';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 
-const TransactionRow = ({ key, type, amount, currency, index }) => {
+const TransactionRow = ({ type, amount, currency, index }) => {
   return (
-    <tr
-      key={key}
-      style={{ backgroundColor: clsx(index % 2 ? 'white' : 'lightgrey') }}
-    >
+    <tr style={{ backgroundColor: clsx(index % 2 ? 'white' : 'lightgrey') }}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>

@@ -2,9 +2,9 @@ import css from './FriendList.module.css';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 
-const FriendListItem = ({ key, avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li key={key} className={css.friend}>
+    <li className={css.friend}>
       <span
         style={{ backgroundColor: clsx(isOnline ? 'green' : 'red') }}
         className={css.dot}
