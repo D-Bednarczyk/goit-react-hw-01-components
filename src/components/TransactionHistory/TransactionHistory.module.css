@@ -1,0 +1,17 @@
+td,
+th,
+tr {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid;
+}
+
+.table {
+  font-size: 20px;
+  border: 1px solid;
+  width: 800px;
+}
+
+th {
+  background-color: aqua;
+}
