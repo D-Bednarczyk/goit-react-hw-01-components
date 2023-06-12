@@ -14,29 +14,26 @@ const TransactionRow = ({ type, amount, currency, index }) => {
 
 export const TransactionHistory = props => {
   return (
-    <>
-      <table className={css.table}>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {props.items.map((el, index) => (
-            <TransactionRow
-              key={el.id}
-              type={el.type}
-              amount={el.amount}
-              currency={el.currency}
-              index={index + 1}
-            ></TransactionRow>
-          ))}
-        </tbody>
-      </table>
-    </>
+    <table className={css.table}>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
+      <tbody>
+        {props.items.map((el, index) => (
+          <TransactionRow
+            key={el.id}
+            type={el.type}
+            amount={el.amount}
+            currency={el.currency}
+            index={index + 1}
+          ></TransactionRow>
+        ))}
+      </tbody>
+    </table>
   );
 };
 

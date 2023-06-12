@@ -26,14 +26,12 @@ const StatList = ({ stats }) => {
 
 export const Statistics = props => {
   return (
-    <>
-      <section className={css.statistics}>
-        <h2 className={css.headerh1}>{props.title}</h2>
-        <ul className={css.list}>
-          <StatList stats={props.stats}></StatList>
-        </ul>
-      </section>
-    </>
+    <section className={css.statistics}>
+      <h2 className={css.headerh1}>{props.title}</h2>
+      <ul className={css.list}>
+        <StatList stats={props.stats}></StatList>
+      </ul>
+    </section>
   );
 };
 

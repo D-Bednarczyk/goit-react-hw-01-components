@@ -17,18 +17,16 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 
 export const FriendList = props => {
   return (
-    <>
-      <ul className={css.ullist}>
-        {props.friends.map(friend => (
-          <FriendListItem
-            key={friend.id}
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
-          ></FriendListItem>
-        ))}
-      </ul>
-    </>
+    <ul className={css.ullist}>
+      {props.friends.map(friend => (
+        <FriendListItem
+          key={friend.id}
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
+        ></FriendListItem>
+      ))}
+    </ul>
   );
 };
 
